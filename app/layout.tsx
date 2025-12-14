@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: 'Jasa Bikin Web & Aplikasi Sat-Set | kyTech',
   description: 'Jasa Pembuatan Website & Aplikasi yang Sat-Set',
 
+  icons: {
+    icon: '/icon.jpg',
+  },
+
   verification: {
     google: 'YTT_htZ6yKvJRXroJBB51aVr8_DSgKj7SYNMMuyY1cQ',
   },
@@ -28,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
