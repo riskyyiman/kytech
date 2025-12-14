@@ -62,6 +62,8 @@ export default function Projects() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={idx === 0} // ✅ hanya gambar pertama
+                  loading={idx === 0 ? 'eager' : 'lazy'}
                   className="object-cover group-hover:scale-110 group-hover:rotate-1 transition duration-700 ease-in-out opacity-90 group-hover:opacity-100"
                 />
 
