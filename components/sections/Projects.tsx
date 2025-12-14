@@ -28,7 +28,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-slate-950 px-6 border-t border-white/5">
+    <section id="projects" className="py-24 bg-transparent border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">

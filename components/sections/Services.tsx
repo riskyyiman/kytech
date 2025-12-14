@@ -6,7 +6,7 @@ import FadeIn from '@/components/ui/FadeIn';
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-slate-950 px-6">
+    <section id="services" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 text-center">Apa Aja Yang Kita Bisa?</h2>

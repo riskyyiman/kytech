@@ -46,7 +46,7 @@ export default function Estimator() {
   };
 
   return (
-    <section className="py-24 bg-slate-950 border-t border-white/5">
+    <section className="py-24 bg-transparent border-t border-white/5">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
         <div className="text-center mb-12">

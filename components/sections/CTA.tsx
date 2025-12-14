@@ -6,7 +6,7 @@ import FadeIn from '@/components/ui/FadeIn';
 
 export default function CTA() {
   return (
-    <section className="py-24 px-6 bg-slate-950">
+    <section className="py-24 px-6 bg-transparent">
       {/* Container Utama */}
       <FadeIn className="max-w-5xl mx-auto relative overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl shadow-indigo-500/20">
         {/* 1. Background Gradient yang lebih kaya warna (Deep Cosmic) */}

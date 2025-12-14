@@ -10,7 +10,7 @@ const faqs = [
 export default function FAQ() {
   return (
     // UBAH: Pastikan background gelap
-    <section className="py-24 bg-slate-950">
+    <section className="py-24 bg-transparent">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-medium text-blue-400 mb-6">

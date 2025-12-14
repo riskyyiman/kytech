@@ -7,7 +7,7 @@ import FadeIn from '@/components/ui/FadeIn';
 export default function Features() {
   return (
     // UBAH: Pakai bg-slate-950 solid dan tambah border-t biar rapi
-    <section className="py-24 bg-slate-950 border-t border-white/5 px-6 relative overflow-hidden">
+    <section className="py-24 bg-transparent border-t border-white/5 px-6 relative overflow-hidden">
       {/* (Opsional) Efek Glow Biru di belakang biar gak mati banget */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-600/5 rounded-full blur-[120px] -z-10" />
 
