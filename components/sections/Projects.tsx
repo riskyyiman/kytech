@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 import FadeIn from '@/components/ui/FadeIn';
 
 export default function Projects() {
@@ -9,23 +10,20 @@ export default function Projects() {
     {
       title: 'UrbanKicks Store',
       category: 'E-Commerce Website',
-      // Gambar toko sepatu/fashion yang clean
       image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800',
       tags: ['Next.js', 'Midtrans Payment'],
     },
     {
       title: 'GoTravel Booking',
       category: 'Mobile App (Android/iOS)',
-      // Gambar travel/nature di HP
       image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800',
       tags: ['Flutter', 'Google Maps API'],
     },
     {
-      title: 'GoTravel Booking',
-      category: 'Mobile App (Android/iOS)',
-      // Link gambar valid: Orang pegang HP lihat peta/travel app
-      image: 'https://images.unsplash.com/photo-1512138664757-360e0aad5132?auto=format&fit=crop&q=80&w=800',
-      tags: ['Flutter', 'Google Maps API'],
+      title: 'Coffee POS System',
+      category: 'SaaS / Kasir Digital',
+      image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800',
+      tags: ['React Dashboard', 'Real-time DB'],
     },
   ];
 
@@ -42,7 +40,6 @@ export default function Projects() {
               <p className="text-slate-400 max-w-xl text-lg">Bukan cuma gambar doang, tapi sistem yang beneran jalan lancar dan bantu bisnis mereka cuan.</p>
             </div>
 
-            {/* Tombol Lihat Semua */}
             <button className="group flex text-white font-semibold items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
               Lihat Portfolio Lengkap
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -55,10 +52,20 @@ export default function Projects() {
             <FadeIn key={idx} delay={idx * 0.1} className="group cursor-pointer">
               {/* Card Container */}
               <div className="relative overflow-hidden rounded-2xl aspect-[4/3] mb-5 border border-white/10 shadow-2xl bg-slate-900">
-                {/* Image Hover Zoom Effect */}
-                <img src={project.image} alt={project.title} className="object-cover w-full h-full group-hover:scale-110 group-hover:rotate-1 transition duration-700 ease-in-out opacity-90 group-hover:opacity-100" />
+                {/* GANTI IMG BIASA JADI NEXT/IMAGE 
+                   - fill: biar gambaruhin container
+                   - sizes: biar browser download ukuran yg pas (hemat kuota)
+                   - priority: buat gambar pertama biar loading cepet
+                */}
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-110 group-hover:rotate-1 transition duration-700 ease-in-out opacity-90 group-hover:opacity-100"
+                />
 
-                {/* Dark Overlay pas Hover */}
+                {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center backdrop-blur-sm">
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition duration-300">
                     <span className="px-6 py-3 bg-white text-black rounded-full font-bold text-sm shadow-lg hover:bg-blue-50 transition">Lihat Detail Project</span>
@@ -73,7 +80,6 @@ export default function Projects() {
                 <span className="text-sm font-medium text-slate-400">{project.category}</span>
                 <span className="hidden md:inline-block w-1 h-1 rounded-full bg-slate-600"></span>
 
-                {/* Tags */}
                 <div className="flex gap-2">
                   {project.tags.map((tag, t) => (
                     <span key={t} className="text-[10px] uppercase tracking-wider font-semibold bg-blue-900/30 text-blue-300 px-2 py-1 rounded border border-blue-500/20">
