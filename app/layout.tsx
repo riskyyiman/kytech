@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'kyTech Agency', // Sekalian ganti judulnya biar gak default
-  description: 'Jasa Pembuatan Website & Aplikasi Profesional',
+  title: 'Jasa Bikin Web & Aplikasi Sat-Set | kyTech',
+  description: 'Jasa Pembuatan Website & Aplikasi yang Sat-Set',
 
   verification: {
     google: 'YTT_htZ6yKvJRXroJBB51aVr8_DSgKj7SYNMMuyY1cQ',
