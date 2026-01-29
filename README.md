@@ -25,3 +25,7 @@ Pastikan Anda telah menginstal **Node.js** di komputer Anda.
 ```bash
 git clone [https://github.com/riskyyiman/kytech.git](https://github.com/riskyyiman/kytech.git)
 cd kytech
+
+```
+
+Created by riskyy
