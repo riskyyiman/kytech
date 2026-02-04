@@ -28,4 +28,4 @@ cd kytech
 
 ```
 
-Created by riskyy
+Created by riskyyimanlael.
